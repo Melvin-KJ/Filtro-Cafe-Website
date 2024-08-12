@@ -1,0 +1,69 @@
+/* IMPORTANT STYLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: #ecb176;
+  --light-color: #fed8b1;
+  --var-color: #481e14;
+  --bg-color: #6f4e37;
+}
+
+html,body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER STYLES*/
+.logo img {
+  width: 200px;
+  height: 120px;
+}
+
+.header {
+  background-image: url(assets/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.container-navbar .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links a {
+  padding: 10px;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: var(--var-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navbar-utilities i{
+    font-size: 2rem;
+    color: var(--var-color);
+    padding-right:40px;
+    margin: 5px;
+}
