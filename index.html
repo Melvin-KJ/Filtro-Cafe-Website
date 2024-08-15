@@ -11,6 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Box Icons CDN -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -22,138 +30,148 @@
   <body>
     <!-- HEADER SECTION STARTS -->
     <header>
-      <div class="navbar">
-        <div class="links-left">
-          <ul class="links left">
-            <li>
-              <a class="" href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Gallery</a>
-            </li>
-          </ul>
+      <section id="nav">
+        <div class="navbar">
+          <div class="links-left">
+            <ul class="links left">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#welcome">About Us</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a class="logo-icon" href="#"
+              ><img src="./assets/coffee logo.png" alt="coffee logo"
+            /></a>
+          </div>
+          <div class="links-right">
+            <ul class="links right">
+              <li>
+                <a href="#specials">Menu</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonial</a>
+              </li>
+              <li>
+                <a href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="icons">
+            <i class="bx bxs-user"></i>
+            <i class="bx bxs-heart"></i>
+            <i class="bx bxs-cart"></i>
+          </div>
         </div>
-        <div class="logo">
-          <a class="logo-icon" href="#"
-            ><img src="./assets/coffee logo.png" alt="coffee logo"
-          /></a>
-        </div>
-        <div class="links-right">
-          <ul class="links right">
-            <li>
-              <a href="#">Menu</a>
-            </li>
-            <li>
-              <a href="#">Testimonial</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="icons">
-          <i class="bx bxs-user"></i>
-          <i class="bx bxs-heart"></i>
-          <i class="bx bxs-cart"></i>
-        </div>
-      </div>
+      </section>
     </header>
     <!-- HEADER SECTION ENDS -->
     <!-- HERO SECTION STARTS-->
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-title">
-          <h1>FILTRO COFFEE SHOP</h1>
-        </div>
-        <div class="hero-description">
-          <h2>Experience the Richness of Filtro Coffee</h2>
-          <p>
-            Savor the finest beans and indulge in a cup brewed to perfection.
-            Start your journey today with a bag of premium beans for just £9.53.
-          </p>
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-title">
+            <h1>FILTRO COFFEE SHOP</h1>
+          </div>
+          <div class="hero-description">
+            <h2>Experience the Richness of Filtro Coffee</h2>
+            <p>
+              Savor the finest beans and indulge in a cup brewed to perfection.
+              Start your journey today with a bag of premium beans for just
+              £9.53.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- HERO SECTION ENDS-->
     <!-- WELCOME SECTION STARTS-->
-    <div class="welcome-container">
-      <div class="welcome-content">
-        <div class="welcome-title">
-          <h1>Welcome to our restaurant!</h1>
-        </div>
-        <div class="welcome-description">
-          <div class="box1 box">
-            <i class="bx bxs-coffee-bean"></i>
-            <h3>Original Coffee</h3>
-            <p>
-              Experience the rich and bold falvors of our signature coffee
-              blends, made from freshly roasted beans sourced from the finest
-              farms.
-            </p>
+    <section id="welcome">
+      <div class="welcome-container">
+        <div class="welcome-content">
+          <div class="welcome-title">
+            <h1>Welcome to our restaurant!</h1>
           </div>
-          <div class="box2 box">
-            <i class="bx bxs-coffee-alt"></i>
-            <h3>Coffees to Choose</h3>
-            <p>
-              Explore our extensive menu of 23 exquisite cofee varieties, each
-              crafted to perfection to suit every palate.
-            </p>
-          </div>
-          <div class="box3 box">
-            <i class="bx bxs-music"></i>
-            <h3>Pleasant Ambience</h3>
-            <p>
-              Relax and unwind in our cozy atmosphere, with soft music,
-              comfortable seating , and a welcoming vibe that makes you feel
-              right at home.
-            </p>
-          </div>
-          <div class="box4 box">
-            <img class="sweets-img" src="./assets/sweets.png" alt="" />
-            <h3>Delicious Pastries</h3>
-            <p>
-              satisfy your sweeet tooth with our freshly baked pastries, made
-              daily with the finest ingredients to complement your coffee
-              experience.
-            </p>
+          <div class="welcome-description">
+            <div class="box1 box">
+              <i class="bx bxs-coffee-bean"></i>
+              <h3>Original Coffee</h3>
+              <p>
+                Experience the rich and bold falvors of our signature coffee
+                blends, made from freshly roasted beans sourced from the finest
+                farms.
+              </p>
+            </div>
+            <div class="box2 box">
+              <i class="bx bxs-coffee-alt"></i>
+              <h3>Coffees to Choose</h3>
+              <p>
+                Explore our extensive menu of 23 exquisite cofee varieties, each
+                crafted to perfection to suit every palate.
+              </p>
+            </div>
+            <div class="box3 box">
+              <i class="bx bxs-music"></i>
+              <h3>Pleasant Ambience</h3>
+              <p>
+                Relax and unwind in our cozy atmosphere, with soft music,
+                comfortable seating , and a welcoming vibe that makes you feel
+                right at home.
+              </p>
+            </div>
+            <div class="box4 box">
+              <img class="sweets-img" src="./assets/sweets.png" alt="" />
+              <h3>Delicious Pastries</h3>
+              <p>
+                satisfy your sweeet tooth with our freshly baked pastries, made
+                daily with the finest ingredients to complement your coffee
+                experience.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- WELCOME SECTION ENDS-->
     <!-- GALLERY SECTION STARTS-->
-    <div class="gallery-container">
-      <div class="gallery-title">
-        <h1>See what our restaurant looks like</h1>
-        <button type="button">View more</button>
+    <section id="gallery">
+      <div class="gallery-container">
+        <div class="gallery-title">
+          <h1>See what our restaurant looks like</h1>
+          <button type="button">View more</button>
+        </div>
+        <div class="gallery-pics">
+          <div class="boxes1 boxes">
+            <img
+              src="https://media.istockphoto.com/id/1428594094/photo/empty-coffee-shop-interior-with-wooden-tables-coffee-maker-pastries-and-pendant-lights.jpg?s=612x612&w=0&k=20&c=dMqeYCJDs3BeBP_jv93qHRISDt-54895SPoVc6_oJt4="
+              alt=""
+            />
+          </div>
+          <div class="boxes2 boxes">
+            <img
+              src="https://media.istockphoto.com/id/1293174933/photo/beautiful-latin-american-female-barista-with-short-hair-and-glasses-is-making-a-cup-of-tasty.jpg?s=612x612&w=0&k=20&c=xpFS5ZjEGvjwe3ZcPKlZxp9ZBibartn9LTxABcWQkqQ="
+              alt=""
+            />
+          </div>
+          <div class="boxes3 boxes">
+            <img
+              src="https://media.istockphoto.com/id/1286692956/photo/empty-cafe-interior-with-chairs-and-tables.jpg?s=612x612&w=0&k=20&c=8rBA3ZWw6Cc4usSNj4QOkXRMfclmOlOU_HpH9emZLRA="
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-      <div class="gallery-pics">
-        <div class="boxes1 boxes">
-          <img
-            src="https://media.istockphoto.com/id/1428594094/photo/empty-coffee-shop-interior-with-wooden-tables-coffee-maker-pastries-and-pendant-lights.jpg?s=612x612&w=0&k=20&c=dMqeYCJDs3BeBP_jv93qHRISDt-54895SPoVc6_oJt4="
-            alt=""
-          />
-        </div>
-        <div class="boxes2 boxes">
-          <img
-            src="https://media.istockphoto.com/id/1293174933/photo/beautiful-latin-american-female-barista-with-short-hair-and-glasses-is-making-a-cup-of-tasty.jpg?s=612x612&w=0&k=20&c=xpFS5ZjEGvjwe3ZcPKlZxp9ZBibartn9LTxABcWQkqQ="
-            alt=""
-          />
-        </div>
-        <div class="boxes3 boxes">
-          <img
-            src="https://media.istockphoto.com/id/1286692956/photo/empty-cafe-interior-with-chairs-and-tables.jpg?s=612x612&w=0&k=20&c=8rBA3ZWw6Cc4usSNj4QOkXRMfclmOlOU_HpH9emZLRA="
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
+    </section>
+
     <!-- GALLERY SECTION ENDS-->
     <!-- SPECIALS SECTION STARTS -->
-    <section class="specials-section">
+    <section id="specials" class="specials-section">
       <div class="container">
         <div class="specials-title">
           <h1>Weekly specials</h1>
@@ -221,8 +239,8 @@
                 <img src="./assets/testimonial_img1.png" alt="" />
               </div>
               <div class="name-user">
-                <strong>Mohammad Faiz</strong>
-                <span>@mohammadfaiz</span>
+                <strong>Neha Kapoor</strong>
+                <span>@nehakapoor</span>
               </div>
             </div>
             <div class="reviews">
@@ -230,11 +248,17 @@
               <i id="star" class="bx bxs-star"></i>
               <i id="star" class="bx bxs-star"></i>
               <i id="star" class="bx bxs-star"></i>
-              <i id="no-star" class="bx bxs-star"></i>
+              <i id="star" class="bx bxs-star"></i>
             </div>
           </div>
           <div class="comments">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad cupiditate quia repellat distinctio hic mollitia officiis eaque deleniti? Perspiciatis quia ducimus neque quos consequatur id minus et cumque numquam!</p>
+            <p>
+              Filtro Coffee never disappoints! Every sip is a burst of rich,
+              bold flavors that perfectly complements my busy mornings. I
+              especially love their signature cold brews. The ambiance of the
+              shop is cozy and welcoming, which makes it a perfect spot for both
+              work and relaxation. Highly recommended!
+            </p>
           </div>
         </div>
         <div class="testimonial-box">
@@ -244,8 +268,8 @@
                 <img src="./assets/testimonial_img2.png" alt="" />
               </div>
               <div class="name-user">
-                <strong>Mohammad Faiz</strong>
-                <span>@mohammadfaiz</span>
+                <strong>Rajesh Malhotra</strong>
+                <span>@rajeshmal</span>
               </div>
             </div>
             <div class="reviews">
@@ -253,11 +277,17 @@
               <i id="star" class="bx bxs-star"></i>
               <i id="star" class="bx bxs-star"></i>
               <i id="star" class="bx bxs-star"></i>
-              <i id="no-star" class="bx bxs-star"></i>
+              <i id="star" class="bx bxs-star"></i>
             </div>
           </div>
           <div class="comments">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad cupiditate quia repellat distinctio hic mollitia officiis eaque deleniti? Perspiciatis quia ducimus neque quos consequatur id minus et cumque numquam!</p>
+            <p>
+              The coffee at Filtro is simply amazing. I'm a big fan of their
+              espresso, which always hits the right spot. The staff is
+              incredibly friendly, and they have a great selection of pastries
+              and snacks to pair with your coffee. A must-visit for any coffee
+              lover in town!
+            </p>
           </div>
         </div>
         <div class="testimonial-box">
@@ -267,8 +297,8 @@
                 <img src="./assets/testimonial_img3.png" alt="" />
               </div>
               <div class="name-user">
-                <strong>Mohammad Faiz</strong>
-                <span>@mohammadfaiz</span>
+                <strong>Arjun Desai</strong>
+                <span>@arjundesai01</span>
               </div>
             </div>
             <div class="reviews">
@@ -280,7 +310,13 @@
             </div>
           </div>
           <div class="comments">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad cupiditate quia repellat distinctio hic mollitia officiis eaque deleniti? Perspiciatis quia ducimus neque quos consequatur id minus et cumque numquam!</p>
+            <p>
+              Great coffee and even better customer service! Filtro Coffee Shop
+              always serves fresh, aromatic brews. I'm especially fond of their
+              cappuccinos. The only reason I'm not giving 5 stars is that the
+              place can get a bit crowded during peak hours, but it's worth the
+              wait!
+            </p>
           </div>
         </div>
         <div class="testimonial-box">
@@ -290,8 +326,8 @@
                 <img src="./assets/testimonial_img4.png" alt="" />
               </div>
               <div class="name-user">
-                <strong>Mohammad Faiz</strong>
-                <span>@mohammadfaiz</span>
+                <strong>Sophia Mendes</strong>
+                <span>@sophiamend</span>
               </div>
             </div>
             <div class="reviews">
@@ -303,11 +339,54 @@
             </div>
           </div>
           <div class="comments">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad cupiditate quia repellat distinctio hic mollitia officiis eaque deleniti? Perspiciatis quia ducimus neque quos consequatur id minus et cumque numquam!</p>
+            <p>
+              Filtro Coffee Shop is my go-to place for a quiet escape. I love
+              their lattes, especially the seasonal flavors they bring in. The
+              atmosphere is relaxing, and the service is top-notch. It's the
+              best place to sit down with a book or catch up with a friend over
+              some delicious coffee.
+            </p>
           </div>
         </div>
       </div>
     </section>
     <!-- TESTIMONIALS SECTION ENDS-->
+    <!-- FOOTER SECTION STARTS -->
+    <section id="footer" class="footer-container">
+      <div class="footer-box">
+        <a class="logo-coffee" href="#"
+          ><img src="./assets/coffee logo.png" alt="coffee logo"
+        /></a>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-twitch"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>About</h3>
+        <a href="#">Our Story</a>
+        <a href="#">FAQ</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-box">
+        <h3>Customer's Resources</h3>
+        <a href="#">Menu</a>
+        <a href="#">Location</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-box">
+        <h3>Services</h3>
+        <a href="#">Payment Options</a>
+        <a href="#">Refunds & Exchanges</a>
+        <a href="#">Limitation of Liability</a>
+      </div>
+    </section>
+    <!-- Copyright-->
+    <p class="copyright">
+      Copyright &#169; 2024 Filtro Coffee Shop. All <u>Rights Reserved</u>
+    </p>
+    <!-- FOOTER SECTION ENDS -->
   </body>
 </html>
