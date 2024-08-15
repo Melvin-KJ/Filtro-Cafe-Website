@@ -22,6 +22,15 @@ body {
 }
 
 /* header styles*/
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -53,7 +62,7 @@ body {
   justify-content: center;
 }
 
-.logo-icon {
+/* .logo-icon {
   width: 100px;
   height: 80px;
 }
@@ -62,6 +71,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+} */
+
+.logo img{
+  max-height: 50px;
 }
 
 .navbar .icons i {
@@ -76,7 +89,7 @@ body {
   color: var(--text-color);
 }
 
-.links-left,
+/* .links-left,
 .links-right,
 .logo,
 .icons,
@@ -84,9 +97,65 @@ li {
   display: flex;
   align-items: center;
   margin-left: 60px;
+} */
+
+.links-left,
+.links-right{
+  display: flex;
+}
+
+.links-left ul,
+.links-right ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+.links-left li,
+.links-right li{
+  margin: 0 10px;
+}
+
+.links-left a,
+.links-right a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.hamburger-menu{
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
 }
 
 /* hero styles */
+
+  #hero{
+    text-align: center;
+    padding:50px 20px;
+  }
+
+  .hero-title h1{
+    font-size: 2.5rem;
+  }
+
+  .hero-description h2{
+    font-size: 1.5rem;
+  }
+
+  .hero-description p{
+    font-size: 1rem;
+  }
 
 .hero-container {
   background: url(./assets/bg-img.png);
@@ -404,7 +473,7 @@ li {
 
 .name-user span{
   color: #979797;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .box-top{
@@ -481,4 +550,58 @@ li {
   padding:30px;
   color: var(--text-color);
   text-align: center;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links-left,.links-right{
+    display: none;
+  }
+
+  .menu-toggle:checked + .hamburger-menu + .links-left,
+  .menu-toggle:checked + .hamburger-menu +.links-left + .logo +.links-right{
+    display: block;
+    text-align: center;
+  }
+
+  .links-left,.links-right{
+    margin-top: 10px;
+  }
+
+  .links-left ul, .links-right ul{
+    list-style: none;
+    padding:0;
+  }
+
+  .links-left li, .links-right li{
+    margin: 10px 0;
+  }
+
+  .logo{
+    margin-bottom: 10px;
+  }
+
+  .icons{
+    display: none;
+  }
+
+  .hero-title h1{
+    font-size: 2rem;
+  }
+
+  .hero-description h2{
+    font-size: 1.25rem;
+  }
+
+  .hero-description p{
+    font-size: 0.875rem;
+  }
+
 }
