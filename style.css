@@ -11,6 +11,7 @@
   --bg-color-1: #cbab8a;
   --bg-color-2: #f8f4e1;
   --bg-color-3: #ffe0b5;
+  --bg-color-4:#f2f0f0;
   --white-color: #fff;
 }
 
@@ -131,6 +132,7 @@ li {
   background-position: center;
   height: 500px;
   width: 100%;
+  padding: 20px;
 }
 
 .welcome-title{
@@ -165,6 +167,7 @@ li {
 
 .box h3{
   font-size: 25px;
+  font-style: italic;
 }
 
 .box p{
@@ -176,3 +179,47 @@ li {
   font-size: 60px;
 }
 /* gallery section styles*/
+.gallery-container{
+  background-color: var(--bg-color-4);
+  height: 600px;
+  padding: 20px;
+}
+
+.gallery-title{
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: var(--primary-color);
+}
+
+.gallery-title h1{
+  font-size: 40px;
+  font-family: "Niconne",cursive;
+}
+
+.gallery-title button{
+  border: 2px solid var(--primary-color);
+  padding: 15px 30px;
+  font-family: "Niconne",cursive;
+  font-size: 1rem;
+}
+
+.boxes{
+  width: 100%;
+  height: auto;
+}
+
+.boxes img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-pics{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+
